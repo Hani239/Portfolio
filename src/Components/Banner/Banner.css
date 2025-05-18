@@ -61,3 +61,48 @@
 .banner-resume:hover{
     border-color: #B415FF;
 }
+
+@media (max-width: 1024px) {
+    .banner h1 {
+        font-size: 48px;
+        width: 80%;
+    }
+
+    .banner p {
+        width: 70%;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner img {
+        width: 180px;
+        margin-top: 70px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+        width: 90%;
+    }
+
+    .banner p {
+        width: 90%;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .banner-action {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .banner-connect,
+    .banner-resume {
+        padding: 15px 30px;
+        font-size: 18px;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
