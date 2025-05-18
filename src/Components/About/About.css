@@ -33,6 +33,10 @@
   gap: 80px;
 }
 
+.about-left img{
+  border-radius: 5%;
+}
+
 .about-right {
   display: flex;
   flex-direction: column;
@@ -122,6 +126,12 @@
   .about-sections {
     flex-direction: column;
     gap: 40px;
+  }
+
+  .about-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-right {
