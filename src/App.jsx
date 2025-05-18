@@ -5,8 +5,8 @@ import About from './Components/About/About'
 
 const App = () => {
   return (
-    <div>
-      <Navbar/>
+    <div className="page-container">
+      {/* <Navbar/> */}
       <Banner/>
       <About/>
     </div>

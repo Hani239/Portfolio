@@ -10,3 +10,11 @@ body{
     font-family: outfit;
     font-weight: 400;
 }
+
+/* Global container */
+.page-container {
+  margin: 0 auto;       /* Center horizontally */
+  padding: 20px 40px;   /* Vertical and horizontal padding */
+  max-width: 2000px;    /* Optional max width */
+  box-sizing: border-box; /* Include padding in width */
+}
