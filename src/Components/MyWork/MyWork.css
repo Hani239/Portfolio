@@ -135,7 +135,11 @@
   }
 
   .mywork-title h1 {
-    font-size: 36px;
+    font-size: 40px;
+  }
+
+  .mywork-title img {
+    top: 35px;
   }
 
   .mywork-container {
@@ -152,7 +156,11 @@
 /* Extra Small Devices (≤480px) */
 @media (max-width: 480px) {
   .mywork-title h1 {
-    font-size: 28px;
+    font-size: 22px;
+  }
+
+  .mywork-title img {
+    top: 28px;
   }
 
   .mywork-showmore {
