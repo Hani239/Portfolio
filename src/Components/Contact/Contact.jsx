@@ -7,7 +7,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
     return (
-        <div className='contact'>
+        <div id='contact' className='contact'>
             <div className="contact-title">
                 <h1>Contact me</h1>
                 <img src={theme_pattern} alt="theme patern" />
