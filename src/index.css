@@ -18,3 +18,39 @@ body{
   max-width: 2000px;    /* Optional max width */
   box-sizing: border-box; /* Include padding in width */
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+
+  /* gradient background */
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+  color: white;
+
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  /* transition */
+  transition: background 0.4s ease, transform 0.3s ease;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(264deg, #b415ff -5.09%, #df8908 106.28%); /* reversed gradient for hover */
+}
+
+.back-to-top:active {
+  transform: translateY(-2px);
+}
+
