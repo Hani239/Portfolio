@@ -6,6 +6,29 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
+    const [result, setResult] = React.useState("");
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "f16f4385-e59a-4da8-993f-8eaee7262eb4");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    };
     return (
         <div id='contact' className='contact'>
             <div className="contact-title">
@@ -36,7 +59,7 @@ const Contact = () => {
                         <div className="contact-detail"><FaLocationDot /><p>Gandhinagar, Gujarat, India</p></div>
                     </div>
                 </div>
-                <form className="contact-right">
+                <form onSubmit={onSubmit} className="contact-right">
                     <label htmlFor="">Your Name</label>
                     <input type="text" placeholder='Enter your name' name='name' />
                     <label htmlFor="">Your Email</label>
