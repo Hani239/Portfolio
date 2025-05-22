@@ -1,17 +1,29 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.svg'
 import underline from '../../assets/curve.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { CgMenuRightAlt } from "react-icons/cg";
+import { MdOutlineCancel } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({ menu, setMenu }) => {
 
-  const [menu, setMenu] = useState("home");
+  // const [menu, setMenu] = useState("home");
+  const menuRef = useRef();
+
+  const openMenu = () => {
+    menuRef.current.style.right = "0";
+  }
+  const closeMenu = () => {
+    menuRef.current.style.right = "-350px";
+  }
 
   return (
     <div className='navbar'>
       <img src={logo} alt="logo" width={72} />
-      <ul className="nav-menu">
+      <CgMenuRightAlt className='nav-mob-open' onClick={openMenu} size={30}/>
+      <ul className="nav-menu" ref={menuRef}>
+        <MdOutlineCancel className='nav-mob-close' onClick={closeMenu} size={30}/>
         <li>
           <div className="nav-item" onClick={() => setMenu("home")}>
             <AnchorLink className='anchor-link' href='#home'>

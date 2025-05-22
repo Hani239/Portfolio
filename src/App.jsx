@@ -10,6 +10,7 @@ import { FaArrowUp } from 'react-icons/fa';
 
 const App = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
+   const [menu, setMenu] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,11 +23,12 @@ const App = () => {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    setMenu("home");
   };
 
   return (
     <div className="page-container">
-      <Navbar />
+      <Navbar menu={menu} setMenu={setMenu} />
       <Banner />
       <About />
       <Services />
