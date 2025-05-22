@@ -10,7 +10,7 @@ import Footer from './Components/Footer/Footer'
 const App = () => {
   return (
     <div className="page-container">
-      {/* <Navbar/> */}
+      <Navbar/>
       <Banner/>
       <About/>
       <Services/>

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin:20px 170px;
+    /* margin:20px 170px; */
 }
 
 .nav-menu{
@@ -11,6 +11,31 @@
     list-style: none;
     gap: 60px;
     font-size: 20px;
+    list-style: none;
+}
+
+.nav-menu li {
+  cursor: pointer;
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-item p {
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .nav-connect{
