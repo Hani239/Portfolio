@@ -11,14 +11,6 @@
       "config": { "distDir": "dist" }
     }
   ],
-  
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "https://your-backend.onrender.com/api/:path*"
-    }
-  ],
-
 
   "routes": [
     { "src": "/api/subscribe", "dest": "api/index.js" },
