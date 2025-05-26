@@ -11,6 +11,15 @@
       "config": { "distDir": "dist" }
     }
   ],
+  
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://portfolio-avgx.onrender.com/api/:path*"
+    }
+  ],
+
+
   "routes": [
     { "src": "/api/subscribe", "dest": "api/index.js" },
     { "src": "/(.*)", "dest": "/" }
