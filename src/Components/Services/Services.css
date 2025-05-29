@@ -68,10 +68,10 @@
   max-width: 300px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 6;
   display: box;
   box-orient: vertical;
-  line-clamp: 3;
+  line-clamp: 6;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -90,9 +90,6 @@
   transition: 0.4s;
 }
 
-/* Base styles: your existing CSS */
-
-/* Responsive tweaks */
 @media (max-width: 1024px) {
   .services {
     margin: 60px 50px;
