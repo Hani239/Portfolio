@@ -1,12 +1,61 @@
-# React + Vite
+# 💼 [Your Name] - Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This is a fully responsive and modern website that showcases my skills, projects, and professional background as a frontend developer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Deployment
 
-## Expanding the ESLint configuration
+This project is deployed on:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 Live URL: https://hani-zala-portfolio.vercel.app/
+
+---
+
+## 📖 About
+
+This portfolio is designed to give an overview of who I am, what technologies I work with, and some of the best projects I’ve built. It also provides an easy way to contact me or view my resume.
+
+---
+
+## ✨ Features
+
+- Responsive design for desktop and mobile
+- Smooth user experience
+- Project showcase with demo and GitHub links
+- Contact form integration
+- Clean and minimal UI/UX
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: React.js, HTML5, CSS3
+- **Icons**: React Icons
+- **Deployment**: Vercel
+- **Backend**: Node.js + Express (for contact form)
+- **Database**: MongoDB Atlas
+
+---
+
+## 📸 Screenshots
+
+> ![Portfolio Screenshot](./src/assets/portfolio-home.png)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed
+- Git installed
+
+### Installation
+
+```bash
+git clone https://github.com/Hani239/Portfolio
+cd portfolio-react
+npm install
+npm run dev
+
