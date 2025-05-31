@@ -1,4 +1,4 @@
-# 💼 [Your Name] - Developer Portfolio
+# 💼 Hani Zala - Developer Portfolio
 
 Welcome to my personal portfolio website! This is a fully responsive and modern website that showcases my skills, projects, and professional background as a frontend developer.
 
